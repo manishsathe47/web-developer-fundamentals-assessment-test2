@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="product.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- navbar -->
+     <div class="topbar">
+        <div class="left">
+          <div class="logo">
+              <img src="logo.png" alt="logo">
+              <p class="brandname">Kafene</p>
+          </div>
+          <nav>
+              <a class="menuitem" href="order.html">Order</a>
+              <a class="menuitem-active" href="products.html">Products</a>
+              <a class="menuitem" href="userlist.html">User</a>
+          </nav>
+        </div>
+        <a class="menuitem" href="index.html">Logout</a>
+      </div>
+      <main class="maincontainer">
+        <div class="pageWrapper">
+          <h1 class="heading">Products</h1>
+          <div class="orderswarpper">
+            <div class="filter">
+              <h3>Filter</h3>
+              <label>
+                <input type="checkbox" id="hide-expired" />
+                Expired
+              </label>
+              <label>
+                <input type="checkbox" id="hide-low-stock" />
+                Stock
+              </label>
+            </div>
+            
+            <div style="width: 100%;">
+              <table id="orderslist">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Brand</th>
+                    <th>Expiry Date</th>
+                    <th>Unit Price</th>
+                    <th>Stock</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            
+            </div>
+          </div>
+       
+        </div>
+      </main>
+      <script src="product.js"></script>
+</body>
+</html>

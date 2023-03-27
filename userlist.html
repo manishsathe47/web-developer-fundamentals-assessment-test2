@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>React App</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="userlist.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+     <div class="topbar">
+        <div class="left">
+          <div class="logo">
+              <img src="logo.png" alt="logo">
+              <p class="brandname">Kafene</p>
+          </div>
+          <nav>
+              <a class="menuitem" href="order.html">Order</a>
+              <a class="menuitem" href="products.html">Products</a>
+              <a class="menuitem-active" href="user.html">User</a>
+          </nav>
+        </div>
+        <a class="menuitem" href="index.html">Logout</a>
+      </div>
+      <!-- main content -->
+  <main class="maincontainer">
+  <div class="pagewrapper">
+	<h1 class="heading">Users</h1>
+  <div class="orderswapper">
+    <form class="filter">
+	<label for="search"></label>
+	<input type="text" id="search" class="searchbar" name="search" onkeyup="searchUsers()" placeholder="Search by name">
+	<button type="button"class="reset" onclick="resetSearch()">Reset</button>
+  </form>
+  <div style="width: 100%;">
+	<table id="userTable" class="usertable">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Avatar</th>
+				<th>Full Name</th>
+				<th>DoB</th>
+				<th>Gender</th>
+				<th>Current Location</th>
+			</tr>
+		</thead>
+		<tbody>
+      
+		</tbody>
+	</table>
+  </div>
+  </div>
+  </div>
+</main>
+	<script src="userlist.js"></script>
+</body>
+</html>
